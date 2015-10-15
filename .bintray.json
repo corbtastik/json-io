@@ -1,0 +1,26 @@
+{
+  "package": {
+    "name": "json-io",    // Bintray package name
+    "repo": "maven",     // Bintray repository name
+    "subject": "cworks", // Bintray subject (user or organization)
+    "desc": "I don't always use JSON but when I do I use JsonIO tool.",
+    "website_url": "www.corbettworks.net",
+    "issue_tracker_url": "https://github.com/cworks/json-io/issues",
+    "vcs_url": "https://github.com/cworks/json-io.git",
+    "licenses": ["MIT"],
+    "labels": ["java", "json"],
+    "public_download_numbers": false,
+    "public_stats": false
+  },
+  "version": {
+    "name": "1.5"
+  },
+  "files":
+  [
+    {
+      "includePattern": "build/libs/json-io-1.5.jar",
+      "uploadPattern": "cworks/json-io/1.5/json-io-1.5.jar"
+    }
+  ],
+  "publish": true
+}
