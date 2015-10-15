@@ -22,5 +22,6 @@
       "uploadPattern": "cworks/json-io/1.5/json-io-1.5.jar"
     }
   ],
-  "publish": true
+  "publish": true,
+  "override": true
 }
