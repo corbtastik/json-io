@@ -1,0 +1,100 @@
+null,START_OBJECT                                               // push(root)
+	id,FIELD_NAME:id,VALUE_NUMBER_INT                           // emit(root.id)
+	firstName,FIELD_NAME:first_name,VALUE_STRING                // emit(root.firstName)
+	lastName,FIELD_NAME:last_name,VALUE_STRING                  // emit(root.lastName)
+	email,FIELD_NAME:email,VALUE_STRING                         // emit(root.email)
+	country,FIELD_NAME:country,VALUE_STRING                     // emit(root.country)
+	ipAddress,FIELD_NAME:ip_address,VALUE_STRING                // emit(root.ipAddress)
+	priorAddresses,FIELD_NAME:prior_addresses,START_ARRAY       // push(root.priorAddresses)
+		null,START_OBJECT                                       // push(root.priorAddresses[0])
+			street,FIELD_NAME:street,VALUE_STRING               // emit(root.priorAddresses[0].street)
+			city,FIELD_NAME:city,VALUE_STRING                   // emit(root.priorAddresses[0].city)
+			state,FIELD_NAME:state,VALUE_STRING                 // emit(root.priorAddresses[0].state)
+			zipcode,FIELD_NAME:zipcode,VALUE_STRING             // emit(root.priorAddresses[0].zipcode)
+		null,END_OBJECT                                         // poop(root.priorAddresses[0])
+		null,START_OBJECT                                       // push(root.priorAddresses[1])
+			street,FIELD_NAME:street,VALUE_STRING               // emit(root.priorAddresses[1].street)
+			city,FIELD_NAME:city,VALUE_STRING                   // emit(root.priorAddresses[1].city)
+			state,FIELD_NAME:state,VALUE_STRING                 // emit(root.priorAddresses[1].state)
+			zipcode,FIELD_NAME:zipcode,VALUE_STRING             // emit(root.priorAddresses[1].zipcode)
+		null,END_OBJECT                                         // poop(root.priorAddresses[1])
+		null,START_OBJECT                                       // push(root.priorAddresses[2])
+			street,FIELD_NAME:street,VALUE_STRING               // emit(root.priorAddresses[2].street)
+			city,FIELD_NAME:city,VALUE_STRING                   // emit(root.priorAddresses[2].city)
+			state,FIELD_NAME:state,VALUE_STRING                 // emit(root.priorAddresses[2].state)
+			zipcode,FIELD_NAME:zipcode,VALUE_STRING             // emit(root.priorAddresses[2].zipcode)
+		null,END_OBJECT                                         // poop(root.priorAddresses[2])
+		null,START_OBJECT                                       // push(root.priorAddresses[3])
+			street,FIELD_NAME:street,VALUE_STRING               // emit(root.priorAddresses[3].street)
+			city,FIELD_NAME:city,VALUE_STRING                   // emit(root.priorAddresses[3].city)
+			state,FIELD_NAME:state,VALUE_STRING                 // emit(root.priorAddresses[3].state)
+			zipcode,FIELD_NAME:zipcode,VALUE_STRING             // emit(root.priorAddresses[3].zipcode)
+		null,END_OBJECT                                         // poop(root.priorAddresses[3])
+	prior_addresses,END_ARRAY                                   // poop(root.priorAddresses)
+	numbers,FIELD_NAME:numbers,START_ARRAY                      // push(root.numbers)
+		null,VALUE_NUMBER_FLOAT                                 // emit(root.numbers[0])
+		null,VALUE_NUMBER_FLOAT                                 // emit(root.numbers[1])
+		null,VALUE_NUMBER_FLOAT                                 // emit(root.numbers[2])
+	numbers,END_ARRAY                                           // poop(root.numbers)
+	birthdate,FIELD_NAME:birthdate,VALUE_STRING                 // emit(root.birthdate)
+	items,FIELD_NAME:items,START_OBJECT                         // push(root.items)
+		item,FIELD_NAME:item,START_ARRAY                        // push(root.items.item)
+			null,START_OBJECT                                   // push(root.items.item[0])
+				id,FIELD_NAME:id,VALUE_STRING                   // emit(root.items.item[0].id)
+				type,FIELD_NAME:type,VALUE_STRING               // emit(root.items.item[0].type)
+				name,FIELD_NAME:name,VALUE_STRING               // emit(root.items.item[0].name)
+				ppu,FIELD_NAME:ppu,VALUE_NUMBER_FLOAT           // emit(root.items.item[0].ppu)
+				batters,FIELD_NAME:batters,START_OBJECT         // push(root.items.item[0].batters)
+					batter,FIELD_NAME:batter,START_ARRAY        // push(root.items.item[0].batters.batter)
+						null,START_OBJECT                       // push(root.items.item[0].batters.batter[0])
+							id,FIELD_NAME:id,VALUE_STRING       // emit(root.items.item[0].batters.batter[0].id)
+							type,FIELD_NAME:type,VALUE_STRING   // emit(root.items.item[0].batters.batter[0].type)
+						null,END_OBJECT                         // poop(root.items.item[0].batters.batter[0])
+						null,START_OBJECT                       // push(root.items.item[0].batters.batter[1])
+							id,FIELD_NAME:id,VALUE_STRING       // emit(root.items.item[0].batters.batter[1].id)
+							type,FIELD_NAME:type,VALUE_STRING   // emit(root.items.item[0].batters.batter[1].type)
+						null,END_OBJECT                         // poop(root.items.item[0].batters.batter[1])
+						null,START_OBJECT
+							id,FIELD_NAME:id,VALUE_STRING
+							type,FIELD_NAME:type,VALUE_STRING
+						null,END_OBJECT
+						null,START_OBJECT
+							id,FIELD_NAME:id,VALUE_STRING
+							type,FIELD_NAME:type,VALUE_STRING
+						null,END_OBJECT
+					batter,END_ARRAY
+				batters,END_OBJECT
+				topping,FIELD_NAME:topping,START_ARRAY
+					null,START_OBJECT
+						id,FIELD_NAME:id,VALUE_STRING
+						type,FIELD_NAME:type,VALUE_STRING
+					null,END_OBJECT
+					null,START_OBJECT
+						id,FIELD_NAME:id,VALUE_STRING
+						type,FIELD_NAME:type,VALUE_STRING
+					null,END_OBJECT
+					null,START_OBJECT
+						id,FIELD_NAME:id,VALUE_STRING
+						type,FIELD_NAME:type,VALUE_STRING
+					null,END_OBJECT
+					null,START_OBJECT
+						id,FIELD_NAME:id,VALUE_STRING
+						type,FIELD_NAME:type,VALUE_STRING
+					null,END_OBJECT
+					null,START_OBJECT
+						id,FIELD_NAME:id,VALUE_STRING
+						type,FIELD_NAME:type,VALUE_STRING
+					null,END_OBJECT
+					null,START_OBJECT
+						id,FIELD_NAME:id,VALUE_STRING
+						type,FIELD_NAME:type,VALUE_STRING
+					null,END_OBJECT
+					null,START_OBJECT
+						id,FIELD_NAME:id,VALUE_STRING
+						type,FIELD_NAME:type,VALUE_STRING
+					null,END_OBJECT
+				topping,END_ARRAY
+			null,END_OBJECT
+		item,END_ARRAY
+	items,END_OBJECT
+null,END_OBJECT

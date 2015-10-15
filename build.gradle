@@ -1,0 +1,57 @@
+description 'A simple JSON toolkit for Java'
+
+apply plugin: "java"
+apply plugin: "maven"
+apply plugin: "idea"
+
+group = "cworks"
+
+compileJava {
+    sourceCompatibility=1.8
+    targetCompatibility=1.8
+}
+
+compileTestJava {
+    sourceCompatibility=1.8
+    targetCompatibility=1.8
+}
+
+configurations {
+    providedRuntime
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile("commons-codec:commons-codec:1.9")
+    compile("joda-time:joda-time:2.8.2")
+    compile("com.fasterxml.jackson.core:jackson-core:2.3.0")
+    compile("com.fasterxml.jackson.core:jackson-annotations:2.3.0")
+    compile("com.fasterxml.jackson.core:jackson-databind:2.3.0")
+    compile("com.fasterxml.jackson.datatype:jackson-datatype-joda:2.3.0")
+    compile("com.google.code.gson:gson:2.2.4")
+
+    testCompile("junit:junit:4.11")
+}
+
+task createPom << {
+    pom {
+        project {
+            inceptionYear '2015'
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("$buildDir/libs/${project.name}-${version}.pom")
+}
+
+task wrapper(type: Wrapper, description: 'Generates the gradle wrapper.') {
+    gradleVersion = '2.2.1'
+}

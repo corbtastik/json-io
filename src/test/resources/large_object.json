@@ -1,0 +1,101 @@
+{
+  "id": 1,
+  "first_name": "Fred",
+  "last_name": "Lynch",
+  "email": "flynch0@latimes.com",
+  "country": "China",
+  "ip_address": "25.210.64.183",
+  "prior_addresses": [
+    {
+      "street": "18318 Namekagon Street",
+      "city": "Flint",
+      "state": "Michigan",
+      "zipcode": "48550"
+    },
+    {
+      "street": "8038 Cherokee Point",
+      "city": "Baltimore",
+      "state": "Maryland",
+      "zipcode": "21281"
+    },
+    {
+      "street": "1070 Randy Terrace",
+      "city": "Lynchburg",
+      "state": "Virginia",
+      "zipcode": "24503"
+    },
+    {
+      "street": "86476 Arkansas Point",
+      "city": "Kansas City",
+      "state": "Missouri",
+      "zipcode": "64125"
+    }
+  ],
+  "numbers": [
+    96.72,
+    20.76,
+    12.99
+  ],
+  "birthdate": "2014-11-14T23:03:12Z",
+  "items": {
+    "item": [
+      {
+        "id": "0001",
+        "type": "donut",
+        "name": "Cake",
+        "ppu": 0.55,
+        "batters": {
+          "batter": [
+            {
+              "id": "1001",
+              "type": "Regular"
+            },
+            {
+              "id": "1002",
+              "type": "Chocolate"
+            },
+            {
+              "id": "1003",
+              "type": "Blueberry"
+            },
+            {
+              "id": "1004",
+              "type": "Devil's Food"
+            }
+          ]
+        },
+        "topping": [
+          {
+            "id": "5001",
+            "type": "None"
+          },
+          {
+            "id": "5002",
+            "type": "Glazed"
+          },
+          {
+            "id": "5005",
+            "type": "Sugar"
+          },
+          {
+            "id": "5007",
+            "type": "Powdered Sugar"
+          },
+          {
+            "id": "5006",
+            "type": "Chocolate with Sprinkles"
+          },
+          {
+            "id": "5003",
+            "type": "Chocolate"
+          },
+          {
+            "id": "5004",
+            "type": "Maple"
+          }
+        ]
+      }
+    ]
+  }
+}
+
