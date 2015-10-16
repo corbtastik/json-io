@@ -9,3 +9,5 @@ deploy:
   release-number: v1.5
   on:
     repo: cworks/json-io
+    tags: true
+    all_branches: true
