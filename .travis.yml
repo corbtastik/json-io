@@ -1,26 +1,16 @@
 language: java
 jdk:
 - oraclejdk8
-
-before_deploy:
-  - git config --global user.email "builds@travis-ci.com"
-  - git config --global user.name "Travis CI"
-  - export GIT_TAG=$TRAVIS_BRANCH-v0.1.$TRAVIS_BUILD_NUMBER
-  - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$API_KEY@github.com/cworks/json-io --tags
-
 deploy:
-  skip_cleanup: true
   provider: releases
-  api_key:
-    secure: $API_KEY
-  file:
-    - "build/libs/json-io-1.5.jar"
+  api_key: "fa47831f89ab3fbc3d10093ea98309e13503dda2"
+  file: "build/libs/json-io-1.5.jar"
+  skip_cleanup: true
   on:
-    repo: cworks/json-io
-    tags: false
-    all_branches: true
-
-branches:
-  except:
-    - /^*-v[0-9]/
+    tags: true
+deploy:
+  provider: bintray
+  file: .bintray.json
+  user: cworks
+  key:
+    secure: ye8AfzbCPbwZDFgo9nnQJqv7Fd5Gw0uVz+RI2p2b9A07q7WJPi6crVMMsEE353C91s9ONmtAd7PyNU6GPFc/iNityqmq8TCBmoPpmCU4j4Mg7CQrJ7sN5Lligje5jkyksrg6a1+LhqZPKB65UUuL/xmMy+B6hwuBxkfGNVRyF+1CaFVzA+WfyiynXcbT+Rvm6f1YbhqoeTC7nya9fyURFeVwJtKmmf563eOWQ3v5xYQqSZWiGiTDXqBrjENeXONSaUdkgWgGol+hvWfOUAY6+cdDIbkeANo32i8/djJo/ycnok03/mnBZOufgV4vjHMev1oOoQpj4VjSIPpBb/3+vaPpbKkt1Y3qxuhWB6Q2/DoY0jWAQFwnCY2YNX03ylM3Ik+4jKMZDupN/pc2jzlgZoxjiv9FDXBjCtqa7HqEjVMwdPWLTHTSSQfatLIHiRi84QmQg7FRhQ8LN5QReWukKrpLK+iGb6r97lr5cBJKflL/SCFP2hIrQ2IZDu5t8acM6qNujCdJRUSHkiBC2LO9dWjSwtIcOyBbw4mELvQ49AfXgSmhJ19Sp7Tw9FIK1SpHIjiydAorD6DA2RuqTAcdSV3VPhIkanHPLb5bL5lOJAtX+AP90zSDzAP8ZkXKiTZtLMllojqaHI4ZENEJc3kSdu0ZWEqTO3MgiAEcJ8UGz2c=
